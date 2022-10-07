@@ -10,8 +10,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
   <BrowserRouter>
     <Header />
-    <Footer />
     <Router />
+    <Footer />
   </BrowserRouter>
 )
 
