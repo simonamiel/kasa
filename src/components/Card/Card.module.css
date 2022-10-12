@@ -72,9 +72,18 @@
 /*===========================================*/
 @media (min-width: 481px) and (max-width: 830px) {
    .backgroundCards {
-    margin: 1rem 2rem 1rem 2rem;
-    padding: 1rem;
+    margin: 2rem 2rem 2rem 2rem;
+        padding: 1rem 1rem 0 1rem;
    } 
+   .card {
+       width: 320px;
+       height: 255px;
+   }
+   .title {
+       width: 240px;
+       padding-left: 0.5rem;
+       padding-top: 12.8rem;
+   }
 }
 
 /*===========================================*/
