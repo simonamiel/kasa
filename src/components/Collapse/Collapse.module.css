@@ -53,11 +53,9 @@
   .collapse {
     margin: 2rem 2rem 2rem 2rem;
   }
-
   .title {
     height: 30px;
     font-size: 13px;
-    
   }
   .icon {
     width: 5%;
@@ -72,35 +70,28 @@
     padding: 1rem 1rem 1rem 1rem;
   }
 }
-
 /*===========================================*/
 /*Media queries for tabs*/
 /*===========================================*/
 @media (min-width: 481px) and (max-width: 830px) {
-    .collapse {
-            margin: 2rem 2rem 2rem 2rem;
-        }
-    
-        .title {
-            height: 30px;
-            font-size: 13px;
-    
-        }
-    
-        .icon {
-            width: 5%;
-            height: 30%;
-        }
-    
-        .iconOpen {
-            width: 5%;
-            height: 30%;
-        }
-    
-        .content {
-            font-size: 12px;
-            padding: 1rem 1rem 1rem 1rem;
-        }
+  .collapse {
+    margin: 2rem 2rem 2rem 2rem;
+  }
+  .title {
+    height: 30px;
+    font-size: 13px;
+  }
+  .icon {
+    width: 5%;
+    height: 30%;
+  }
+  .iconOpen {
+    width: 5%;
+    height: 30%;
+  }
+  .content {
+    font-size: 12px;
+    padding: 1rem 1rem 1rem 1rem;
+  }
 }
-
 /*===========================================*/
