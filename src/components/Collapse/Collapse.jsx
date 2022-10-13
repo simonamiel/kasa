@@ -25,14 +25,3 @@ function Collapse({ title, content }) {
 }
 
 export default Collapse
-
-
-/*
-<div className={CollapseCSS.collapse `${active && "active"}`}>
-      <div className={CollapseCSS.title} onClick={handletoggle}>
-        {title}
-        <span className={CollapseCSS.icon}>test</span>
-      </div>
-      <div className={CollapseCSS.content}>{content}</div>
-    </div>
-*/
