@@ -1,40 +1,32 @@
-import { useState } from "react"
-import { Children } from "react"
+import React from 'react'
+import { useState } from "react" 
 import { useParams } from "react-router-dom"
-import PropTypes from "prop-types"
-import Lodgings from "../../lodgings.json"
 import SliderCSS from "../Slideshow/Slideshow.module.css"
+import {DataLodgings} from '../../utils/DataLodgings'
 
-function Slideshow(props) {
-    
-    /*const [lodgings] = useState(Lodgings)
-    let { id } = useParams(props)*/
+function Slideshow({images}) {
+  
+  const [ current, setCurrent] = useState(0)
+  const length = images.length
 
-    const { children } = props
+   const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1)
+  }
+  /*console.log(current)*/
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current -1)
+  }
+  /*console.log(current)*/
 
-    const displayItems = Children.map(children, (child, index) =>(
-        <div className={SliderCSS.carousselItems} key={index}>{child}</div>
-    ))
   
   return (
-    <div>
-        <div className={SliderCSS.container}>
-        <div className={SliderCSS.leftArrow}>Left</div>
-        <div className={SliderCSS.displayFrame}>
-            {displayItems}
-
-        </div>
-        <div className={SliderCSS.rightArrow}>right</div>
-        </div>
-    </div>
+    <section className={SliderCSS.slider}>
+      <div className={SliderCSS.leftArrow} onClick={prevSlide}>LEFT</div>
+      <div className={SliderCSS.rightArrow} onClick={nextSlide}>RIGHT</div>
+      <img src={images[current]} alt={images.title} className={SliderCSS.imgage} key={images.id}/>
+    </section>
   )
-}
-/*Proptypes to define the type of props for props security*/
-Slideshow.propTypes = {
-  key: PropTypes.string,
-  title: PropTypes.string,
-  pictures: PropTypes.string,
-  cover: PropTypes.string,
+
 }
 
 export default Slideshow

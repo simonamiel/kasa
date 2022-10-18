@@ -1,58 +1,32 @@
-.container {
+.slider {
     position: relative;
     display: flex;
-    vertical-align: middle;
-    overflow: hidden;
-    width: 100%;
+    justify-content: center;
     align-items: center;
-}
-.displayFrame {
-    touch-action: none;
     margin: 2rem 4rem 2rem 4rem;
+    
+}
+.image {
     width: 100%;
-    height: 415px;
-    background-color: grey;
-    overflow-y: hidden;
-    overflow-x: auto;
-    white-space: none;
-    z-index: 1;
-    caret-color: transparent;
+    height: 100%;
     border-radius: 25px;
+
+}
+.rightArrow {
+    position: absolute;
+    left: 90%;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+    
+
 
 }
 .leftArrow {
     position: absolute;
-    left: 1%;
-    padding-left: 60px;
-    color: #FFFFFF;
-    z-index: 2;
-}
-.leftArrow:hover {
-    color: #FF6060;
+    right: 90%;
     cursor: pointer;
-}
-.rightArrow {
-    position: absolute;
-    right: 1%;
-    padding-right: 60px;
-    color: #FFFFFF;
-    z-index: 2;
-}
+    z-index: 10;
+    user-select: none;
 
-.rightArrow:hover {
-    color: #FF6060;
-    cursor: pointer;
-}
-.carousselItems {
-   touch-action: none;
-   height: 100%;
-   width: 100%;
-   display: inline-block;
-   vertical-align: top;
-
-}
-.carousselItems img {
-    height: 100%;
-    max-width: 100%;
-    width: 100%;
 }
