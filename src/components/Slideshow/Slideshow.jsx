@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState } from "react" 
-import { useParams } from "react-router-dom"
 import SliderCSS from "../Slideshow/Slideshow.module.css"
-import {DataLodgings} from '../../utils/DataLodgings'
+import leftArrow from "../Images/left-arrow.svg"
+import rightArrow from "../Images/right-arrow.svg"
 
 function Slideshow({images}) {
   
@@ -20,10 +20,13 @@ function Slideshow({images}) {
 
   
   return (
-    <section className={SliderCSS.slider}>
-      <div className={SliderCSS.leftArrow} onClick={prevSlide}>LEFT</div>
-      <div className={SliderCSS.rightArrow} onClick={nextSlide}>RIGHT</div>
-      <img src={images[current]} alt={images.title} className={SliderCSS.imgage} key={images.id}/>
+    <section className={SliderCSS.container}>
+      <div className={SliderCSS.slider}>
+      <img src={images[current]} alt={images.title} className={SliderCSS.image} key={images.id}/>
+      </div>
+      <img src={leftArrow} className={images.length === 1 ? SliderCSS.leftArrowNone : SliderCSS.leftArrow} onClick={prevSlide}/>
+      <div className={images.length === 1 ? SliderCSS.numbInfoNone : SliderCSS.numbInfo}>{current + 1}/{images.length}</div>
+      <img src={rightArrow} className={images.length === 1 ? SliderCSS.rightArrowNone : SliderCSS.rightArrow} onClick={nextSlide}/>
     </section>
   )
 

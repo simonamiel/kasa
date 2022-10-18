@@ -1,6 +1,6 @@
 import React from "react";
 import Slideshow from "../../components/Slideshow/Slideshow"
-import {DataLodgings} from "../../utils/DataLodgings"
+import {DataLodgings} from "../../Data/DataLodgings"
 import { useParams } from "react-router-dom"
 
 export default function Lodgings() {
