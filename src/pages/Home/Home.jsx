@@ -6,7 +6,7 @@ import Card from "../../components/Card/Card"
 export default function Home() {
   return (
     <div>
-      <Banner src={ImgBannerHome} title={"Chez vous, partout et ailleurs"}/>
+      <Banner src={ImgBannerHome} title={"Chez vous, partout et ailleurs"} alt="Illustration d'une côte"/>
       <Card />
     </div>
   )
