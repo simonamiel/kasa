@@ -90,3 +90,137 @@
   height: 30px;
   padding: 2px;
 }
+/*===========================================*/
+/*Media queries for mobiles*/
+/*===========================================*/
+@media (max-width: 480px) {
+  .container {
+    margin: 2rem 2rem 1rem 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .leftDetails {
+    width: 100%;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .location {
+    font-size: 14px;
+  }
+  .tags {
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 16.5px;
+  }
+  .tag {
+    margin-right: 10px;
+    border-radius: 5px;
+    width: 35%;
+    height: 18px;
+    font-size: 10px;
+    margin-top: 0.5rem;
+  }
+  .rightDetails {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hostName {
+    font-size: 12px;
+    width: 50%;
+  }
+  .pictProfile {
+    width: 32px;
+    height: 32px;
+  }
+
+  .picture {
+    width: 32px;
+    height: 32px;
+  }
+  .starsBox {
+    width: 98px;
+    height: 18px;
+    margin-top: 0px;
+    margin-right: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .stars {
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+  }
+}
+
+/*===========================================*/
+/*Media queries for tabs*/
+/*===========================================*/
+@media (min-width: 481px) and (max-width: 830px) {
+  .container {
+    margin: 2rem 2rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .leftDetails {
+    width: 100%;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .location {
+    font-size: 14px;
+  }
+  .tags {
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 16.5px;
+  }
+  .tag {
+    margin-right: 10px;
+    border-radius: 5px;
+    width: 15%;
+    height: 18px;
+    font-size: 10px;
+  }
+  .rightDetails {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hostName {
+    font-size: 12px;
+  }
+  .pictProfile {
+    width: 32px;
+    height: 32px;
+  }
+  .picture {
+    width: 32px;
+    height: 32px;
+  }
+  .starsBox {
+    width: 98px;
+    height: 18px;
+    margin-top: 0px;
+    margin-right: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .stars {
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+  }
+}
+
+/*===========================================*/
