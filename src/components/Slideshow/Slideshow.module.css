@@ -35,9 +35,11 @@
   width: 100%;
   object-fit: cover;
   border-radius: 25px;
-background: linear-gradient(90deg,
-            rgba(0, 0, 0, 0.7206232834930848) 100%,
-            rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.7206232834930848) 100%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 .numbInfo {
   color: white;
@@ -47,5 +49,64 @@ background: linear-gradient(90deg,
   font-size: 18px;
 }
 .numbInfoNone {
-    opacity: 0;
+  opacity: 0;
 }
+/*===========================================*/
+/*Media queries for mobiles*/
+/*===========================================*/
+@media (max-width: 480px) {
+  .container {
+    margin: 1rem 2rem 1rem 2rem;
+    border-radius: 10px;
+    height: 255px;
+  }
+
+  .slider {
+    height: 255px;
+  }
+
+  .leftArrow {
+    margin-left: 5%;
+    top: 45%;
+    height: 19.8px;
+    width: 11.7px;
+  }
+  .rightArrow {
+    margin-left: 90%;
+    top: 45%;
+    height: 19.8px;
+    width: 11.7px;
+  }
+  .image {
+    height: 255px;
+    border-radius: 10px;
+  }
+  .numbInfo {
+    opacity: 0;
+  }
+}
+
+/*===========================================*/
+/*Media queries for tabs*/
+/*===========================================*/
+@media (min-width: 481px) and (max-width: 830px) {
+.leftArrow {
+        margin-left: 5%;
+        top: 45%;
+        height: 40px;
+        width: 24px;
+    }
+
+    .rightArrow {
+        margin-left: 90%;
+        top: 45%;
+        height: 40px;
+        width: 24px;
+    }
+  
+    .numbInfo {
+    color: #ff6060;
+  }
+}
+
+/*===========================================*/
