@@ -5,3 +5,23 @@
     justify-content: center;
     align-items: center;
 }
+/*===========================================*/
+/*Media queries for mobiles*/
+/*===========================================*/
+@media (max-width: 480px) {
+.collapse {
+        margin: 1rem 1rem 1rem 3rem;
+    }
+  
+}
+
+/*===========================================*/
+/*Media queries for tabs*/
+/*===========================================*/
+@media (min-width: 481px) and (max-width: 830px) {
+.collapse {
+        margin: 1rem 2rem 1rem 6rem;
+    }
+}
+
+/*===========================================*/
