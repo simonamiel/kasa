@@ -1,0 +1,7 @@
+.collapse {
+    margin: 2rem 5rem 2rem 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
