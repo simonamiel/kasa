@@ -1,7 +1,5 @@
 import CollapseCSS from "../Collapse/Collapse.module.css"
 import { useState } from "react"
-import { useParams } from "react-router-dom"
-import { DataLodgings } from "../../Data/DataLodgings"
 import iconCollapse from "../Images/icon-collapse.svg"
 
 function Collapse({ title, content }) {
