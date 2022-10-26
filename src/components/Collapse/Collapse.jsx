@@ -1,5 +1,6 @@
 import CollapseCSS from "../Collapse/Collapse.module.css"
 import { useState } from "react"
+import PropTypes from "prop-types"
 import iconCollapse from "../Images/icon-collapse.svg"
 
 function Collapse({ title, content }) {
@@ -21,6 +22,11 @@ function Collapse({ title, content }) {
       </div>
     </div>
   )
+}
+/*Proptypes to define the type of props for props security*/
+Collapse.propTypes = {
+  title: PropTypes.string,
+  content: PropTypes.string,
 }
 
 export default Collapse
