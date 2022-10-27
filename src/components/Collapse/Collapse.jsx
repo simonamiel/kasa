@@ -23,10 +23,5 @@ function Collapse({ title, content }) {
     </div>
   )
 }
-/*Proptypes to define the type of props for props security*/
-Collapse.propTypes = {
-  title: PropTypes.string,
-  
-}
 
 export default Collapse
